@@ -20,7 +20,7 @@ import javax.print.attribute.standard.MediaSize;
 @Import({User.class, DBHelper.class})
 @Configuration(proxyBeanMethods = true)
 @ImportResource("classpath:bean.xml")
-//@ConditionalOnMissingBean(name = "tom")
+@ConditionalOnMissingBean(name = "tom")
 @EnableConfigurationProperties(Cat.class)
 public class MyConfig {
 
